@@ -1,0 +1,111 @@
+:root {
+    --green: #00b30c;
+    --gray1: #353537;
+    --gray2: #eaeaeb;
+    --gray3: #777777;
+}
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+#header{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    min-height: 30rem;
+}
+a.btn-outline-light:hover {
+  color: rgb(7, 7, 7) !important;
+}
+#header .nav-link{
+    color: rgb(250, 242, 242) !important;
+}
+.hero-title{
+    font-weight: 700;
+
+}
+.hero-caption{
+    min-height: 25rem;
+}
+h2{
+    font-size: 3rem;
+}
+/* .btn-success{
+    background-color:greenyellow ;
+} */
+/* features */
+.features{
+    overflow: hidden;
+    padding-bottom: 60px;
+    height: calc(auto + 30px);
+}
+.features p{
+    opacity: 0;
+    padding-top:30px;
+    transition: all .3s ease;
+}
+.features h3::before
+{
+    content: '';
+    display: block;
+    margin: 5px auto 20px auto;
+    height: 2px;
+    width:60px;
+    background-color: #00b30c;
+    transition: all .3s ease;
+}
+.features:hover h3::before{
+    width: 180px;
+}
+.features:hover p{
+    display: block;
+    opacity: 1;
+    padding-top: 10px;
+    color: #999;
+}
+.features h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+#banner .row{
+    /* padding-top: 35px; */
+ height:25rem;
+}
+#category .logo{
+    background-image: url(../img/service_1.png);
+}
+#category .social-media{
+    background-image: url(../img/service_2.png);
+}
+#category .audio{
+    background-image: url(../img/service_3.png);
+}
+#category .translate{
+    background-image: url(../img/service_4.png);
+}
+#category .word_press{
+    background-image: url(../img/service_5.png);
+}
+#category .description{
+    height: 20rem;
+    background-size: cover;
+}
+#category .description p{
+    font-size: 0.9rem;
+}
+#category .description span{
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+#category .row>div{
+    flex: 0 0 calc(50% - 1rem);
+    margin-top: 1rem;
+}
+
+@media (min-width:992px){
+#category .row>div{
+    flex: 0 0 calc(20% - 1rem);
+    margin-top: 0;
+}
+}
